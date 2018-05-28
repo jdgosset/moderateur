@@ -9,8 +9,8 @@
     <body>
         <textarea id="smiley">
             :') j'adore les :) c'est trop :D !
-
         </textarea>
+
         <button type="button" name="moderer" id="moderer"> Modérer</button>
 
         <script type="text/javascript">
@@ -20,8 +20,10 @@
         btn.addEventListener('click', resultat);
 
         function resultat(){
-        texte.replace(/:')/ :)/ :D/,"--");
-        alert(resultat);
+            var content = texte.value
+            var smile = content.replace(":)","--");
+
+        alert(smile);
 
         }
 
